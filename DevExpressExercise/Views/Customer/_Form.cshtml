@@ -1,0 +1,18 @@
+﻿@model Customer
+
+
+    @(Html.DevExtreme().Form<Customer>()
+            .ID("dxCustomerForm")
+            .FormData(Model)
+            .Items(items =>
+            {
+                items.AddSimpleFor(m => m.Name);
+                items.AddSimpleFor(m => m.Phone).Template(
+            @<text>
+                @(Html.DevExtreme().TextBoxFor(model => model.Phone)
+            .Disabled(!Model.IsNew))
+                </text>
+        );
+            })
+        )
+

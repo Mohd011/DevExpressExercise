@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32819.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevExpressExercise", "DevExpressExercise\DevExpressExercise.csproj", "{DBD0DD4B-3B6E-4F13-A4AF-44D240185E0D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevExpressDomain", "DevExpressDomain\DevExpressDomain.csproj", "{F43ACB05-C8B0-4975-AF14-71D7E5A1CFB9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DevExtreme NuGet.config", "DevExtreme NuGet.config", "{98A09B7F-D906-4B31-9000-09C7495C9B78}"
+	ProjectSection(SolutionItems) = preProject
+		NuGet.config = NuGet.config
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DBD0DD4B-3B6E-4F13-A4AF-44D240185E0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBD0DD4B-3B6E-4F13-A4AF-44D240185E0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBD0DD4B-3B6E-4F13-A4AF-44D240185E0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBD0DD4B-3B6E-4F13-A4AF-44D240185E0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F43ACB05-C8B0-4975-AF14-71D7E5A1CFB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F43ACB05-C8B0-4975-AF14-71D7E5A1CFB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F43ACB05-C8B0-4975-AF14-71D7E5A1CFB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F43ACB05-C8B0-4975-AF14-71D7E5A1CFB9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BF9252A9-9DDD-49A3-AD7E-907C9519D60A}
+	EndGlobalSection
+EndGlobal

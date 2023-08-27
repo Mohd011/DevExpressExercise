@@ -1,0 +1,35 @@
+﻿@model IEnumerable<Customer>
+
+<a asp-action="add"  asp-controller="Customer" class="btn btn-primary">Add</a>
+
+@(
+Html.DevExtreme().DataGrid<Customer>()
+    .DataSource(Model)
+@*     .Controller("CustomerController")
+    .LoadAction("Index")
+    .InsertAction("Add")
+    .UpdateAction("Update")
+    .Key("id"))
+    .RemoteOperations(true) *@
+    .Columns(columns =>
+    {
+        columns.Add().DataField("Name");
+        columns.AddFor(m => m.Phone);
+        columns.AddFor(m => m.Status);
+        columns.Add().Caption("Actions").CellTemplate(@<text>
+            <a href="@Url.Action("Edit", "Customer", new { id =  })" class="btn btn-primary">Edit</a>
+        </text>);
+        columns.Add().Type(GridCommandColumnType.Buttons).Buttons(buttons => 
+        {
+            
+            buttons.Add().Name("edit");//Template($"<a href='https://localhost:44336/Customer/edit/?id={columns.AddFor(c => c.Id).AllowHiding(true)}'>edit</a>");
+            buttons.Add().Name("delete");
+        });
+    })
+    .Editing(editing => 
+    {
+        editing.Mode(GridEditMode.Form);
+        editing.AllowUpdating(true);
+        editing.AllowDeleting(true);
+    })
+)
