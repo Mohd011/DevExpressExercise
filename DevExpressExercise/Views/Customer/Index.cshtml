@@ -16,9 +16,9 @@ Html.DevExtreme().DataGrid<Customer>()
         columns.Add().DataField("Name");
         columns.AddFor(m => m.Phone);
         columns.AddFor(m => m.Status);
-        columns.Add().Caption("Actions").CellTemplate(@<text>
-            <a href="@Url.Action("Edit", "Customer", new { id =  })" class="btn btn-primary">Edit</a>
-        </text>);
+        @* columns.Add().Caption("Actions").CellTemplate(@<text>
+            <a href="@Url.Action("Edit", "Customer", new { id =  Html.DevExtreme().te})" class="btn btn-primary">Edit</a>
+        </text>); *@
         columns.Add().Type(GridCommandColumnType.Buttons).Buttons(buttons => 
         {
             
